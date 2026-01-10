@@ -1,4 +1,4 @@
-# speedcomparison
+# speeds
 
 ## Building
 

@@ -21,9 +21,6 @@ env/
 *.swo
 *~
 
-# Project specific
-speeds.html
-
 # uv
 .uv/
 .venv/

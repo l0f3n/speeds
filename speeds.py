@@ -206,7 +206,7 @@ fig.update_layout(
     margin=dict(l=80, r=200, t=80, b=50)
 )
 
-fig.write_html('speeds.html')
-print("Interactive chart saved as 'speeds.html'")
+fig.write_html('index.html')
+print("Interactive chart saved as 'index.html'")
 
 fig.show()
