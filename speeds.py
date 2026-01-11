@@ -181,7 +181,8 @@ fig.update_layout(
         showgrid=True,
         gridcolor='lightgray',
         gridwidth=1,
-        tickformat=',.0f'
+        tickformat=',.0f',
+        type='linear'
     ),
     xaxis=dict(
         title='',
@@ -202,7 +203,35 @@ fig.update_layout(
     plot_bgcolor='white',
     width=1280,
     height=720,
-    margin=dict(l=80, r=200, t=80, b=50)
+    margin=dict(l=80, r=200, t=80, b=50),
+    updatemenus=[
+        dict(
+            type='dropdown',
+            direction='down',
+            active=0,
+            x=0.01,
+            y=0.95,
+            xanchor='left',
+            yanchor='top',
+            buttons=list([
+                dict(
+                    label='Linjär skala',
+                    method='relayout',
+                    args=[{'yaxis.type': 'linear', 'yaxis.tickformat': ',.0f'}]
+                ),
+                dict(
+                    label='Loggskala',
+                    method='relayout',
+                    args=[{'yaxis.type': 'log', 'yaxis.tickformat': ',.0f'}]
+                )
+            ]),
+            bgcolor='rgba(255, 255, 255, 0.95)',
+            bordercolor='rgba(200, 200, 200, 0.8)',
+            borderwidth=1.5,
+            font=dict(size=13, family=FONT, color='#333333'),
+            pad=dict(r=0, t=10, b=0, l=10)
+        )
+    ]
 )
 
 fig.write_html('index.html')
