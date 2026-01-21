@@ -31,6 +31,7 @@ bar_configs = [
             {"generation": "USB 3.0 / 3.1 Gen 1 / 3.2 Gen 1", "mbs": 625},
             {"generation": "USB 3.1 Gen 2 / 3.2 Gen 2", "mbs": 1250},
             {"generation": "USB 3.2 Gen 2×2", "mbs": 2500},
+            {"generation": "USB4 (40 Gbps)", "mbs": 5000},
         ],
         'label': 'USB',
     },
